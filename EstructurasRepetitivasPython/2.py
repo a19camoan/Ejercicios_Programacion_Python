@@ -30,10 +30,8 @@ print("Programa que pide números y dice cuales son mayores, menores o iguales a
 
 repeticiones = int(input("Introduzca cuántos números va a introducir: "))
 
-# Bucle que resta 1 al número de veces que ha introducido el usuario hasta llegar
-#  a 0 y cuenta los números mayores, menores o iguales a 0.
-while repeticiones > 0:
-    repeticiones -= 1
+# Se repite el bucle tantas veces como el usuario ha indicado y se comparan los números introducidos.
+for n in range(repeticiones):
     num = float(input("Introduzca un número: "))
     if num < 0:
         negativos += 1

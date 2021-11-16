@@ -22,15 +22,15 @@ frase = input("Introduzca la frase: ")
 
 espacios = 0
 
-for i in frase:
+for i in frase.strip():
     if i == " ":
         espacios += 1
 
 print(f"Hay {espacios + 1} palabras.")
 
 """
-Versión con el método .split(): 
-Divide una cadena en una lista donde cada palabra es un elemento de una lista
+# Versión con el método .split(): 
+# Divide una cadena en una lista donde cada palabra es un elemento de una lista
 
 frase_separada = frase.split()
 numero_palabras = len(frase_separada)
